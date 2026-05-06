@@ -22,6 +22,7 @@ conda activate heart-risk
 pip install -r requirements.txt
 python app.py
 ```
+环境配置参照requirements.txt
 
 浏览器打开：`http://127.0.0.1:5000`
 
