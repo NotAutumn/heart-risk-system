@@ -1,0 +1,116 @@
+{
+  "raw_shape": [
+    920,
+    24
+  ],
+  "cleaned_shape": [
+    916,
+    24
+  ],
+  "encoded_shape": [
+    916,
+    37
+  ],
+  "center_distribution": {
+    "cleveland": 303,
+    "hungarian": 294,
+    "switzerland": 123,
+    "va": 200
+  },
+  "original_target_distribution": {
+    "0": 411,
+    "1": 265,
+    "2": 109,
+    "3": 107,
+    "4": 28
+  },
+  "class_distribution": {
+    "0": 410,
+    "1": 506
+  },
+  "missing_report": {
+    "age": 0,
+    "trestbps": 59,
+    "chol": 30,
+    "thalach": 55,
+    "oldpeak": 62,
+    "sex": 0,
+    "cp": 0,
+    "fbs": 90,
+    "restecg": 2,
+    "exang": 55,
+    "slope": 309,
+    "ca": 611,
+    "thal": 486
+  },
+  "impute_strategy": {
+    "age": "中位数填充",
+    "trestbps": "中位数填充",
+    "chol": "中位数填充",
+    "thalach": "中位数填充",
+    "oldpeak": "中位数填充",
+    "trestbps_missing": "缺失标记保留",
+    "thalach_missing": "缺失标记保留",
+    "oldpeak_missing": "缺失标记保留",
+    "fbs_missing": "缺失标记保留",
+    "exang_missing": "缺失标记保留",
+    "slope_missing": "缺失标记保留",
+    "ca_missing": "缺失标记保留",
+    "thal_missing": "缺失标记保留",
+    "sex": "众数填充",
+    "cp": "众数填充",
+    "fbs": "众数填充",
+    "restecg": "众数填充",
+    "exang": "众数填充",
+    "slope": "众数填充",
+    "ca": "众数填充",
+    "thal": "众数填充",
+    "num": "原始标签保留",
+    "target": "二分类标签保留",
+    "center": "中心来源保留"
+  },
+  "outlier_summary": {
+    "age": 0,
+    "trestbps": 1,
+    "chol": 2,
+    "thalach": 0,
+    "oldpeak": 1
+  },
+  "feature_meanings": {
+    "age": "年龄，单位为岁。",
+    "sex": "性别，1 表示男性，0 表示女性。",
+    "cp": "胸痛类型，1-4 表示不同胸痛模式。",
+    "trestbps": "静息血压，单位为 mm Hg。",
+    "chol": "血清胆固醇，单位为 mg/dl。",
+    "fbs": "空腹血糖是否大于 120 mg/dl。",
+    "restecg": "静息心电图结果。",
+    "thalach": "达到的最大心率。",
+    "exang": "运动诱发性心绞痛。",
+    "oldpeak": "运动后 ST 压低程度。",
+    "slope": "运动峰值 ST 段斜率。",
+    "ca": "主要血管数目，来源于荧光透视检查。",
+    "thal": "地中海贫血相关检查结果。",
+    "trestbps_missing": "静息血压缺失标记，1 表示原始记录缺失。",
+    "thalach_missing": "最大心率缺失标记，1 表示原始记录缺失。",
+    "oldpeak_missing": "ST 压低缺失标记，1 表示原始记录缺失。",
+    "fbs_missing": "空腹血糖缺失标记，1 表示原始记录缺失。",
+    "exang_missing": "运动诱发性心绞痛缺失标记，1 表示原始记录缺失。",
+    "slope_missing": "ST 斜率缺失标记，1 表示原始记录缺失。",
+    "ca_missing": "主要血管数目缺失标记，1 表示原始记录缺失。",
+    "thal_missing": "地中海贫血检查缺失标记，1 表示原始记录缺失。",
+    "center": "样本所属数据中心，用于说明多中心来源。",
+    "num": "UCI 原始标签，0 表示无心脏病，1-4 表示不同程度风险。",
+    "target": "二分类目标变量，1 表示存在心脏病风险，0 表示无明显风险。"
+  },
+  "missing_indicator_features": [
+    "trestbps",
+    "thalach",
+    "oldpeak",
+    "fbs",
+    "exang",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "sample_rows": 200
+}

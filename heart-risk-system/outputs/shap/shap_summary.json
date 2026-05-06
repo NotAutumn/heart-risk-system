@@ -1,0 +1,338 @@
+{
+  "model_name": "RandomForest",
+  "top_features": [
+    "cat__cp_4.0",
+    "num__oldpeak",
+    "cat__exang_0.0",
+    "num__chol",
+    "cat__exang_1.0",
+    "cat__cp_2.0"
+  ],
+  "top_original_features": [
+    "cp",
+    "exang",
+    "oldpeak",
+    "sex",
+    "chol",
+    "thal"
+  ],
+  "global_importance": {
+    "num__age": 0.032845,
+    "num__trestbps": 0.01064,
+    "num__chol": 0.045032,
+    "num__thalach": 0.03777,
+    "num__oldpeak": 0.050485,
+    "num__trestbps_missing": 0.002244,
+    "num__thalach_missing": 0.002104,
+    "num__oldpeak_missing": 0.002546,
+    "num__fbs_missing": 0.009576,
+    "num__exang_missing": 0.001913,
+    "num__slope_missing": 0.015062,
+    "num__ca_missing": 0.012339,
+    "num__thal_missing": 0.005002,
+    "cat__sex_0.0": 0.026781,
+    "cat__sex_1.0": 0.023401,
+    "cat__cp_1.0": 0.002808,
+    "cat__cp_2.0": 0.039159,
+    "cat__cp_3.0": 0.01249,
+    "cat__cp_4.0": 0.096533,
+    "cat__fbs_0.0": 0.005914,
+    "cat__fbs_1.0": 0.00664,
+    "cat__restecg_0.0": 0.003983,
+    "cat__restecg_1.0": 0.00394,
+    "cat__restecg_2.0": 0.002277,
+    "cat__exang_0.0": 0.048357,
+    "cat__exang_1.0": 0.039274,
+    "cat__slope_1.0": 0.010472,
+    "cat__slope_2.0": 0.008935,
+    "cat__slope_3.0": 0.000878,
+    "cat__ca_0.0": 0.012303,
+    "cat__ca_1.0": 0.003904,
+    "cat__ca_2.0": 0.002397,
+    "cat__ca_3.0": 0.001093,
+    "cat__thal_3.0": 0.025448,
+    "cat__thal_6.0": 0.001303,
+    "cat__thal_7.0": 0.014583
+  },
+  "original_global_importance": [
+    {
+      "feature": "cp",
+      "label": "胸痛类型",
+      "meaning": "胸痛类型，1-4 表示不同胸痛模式。",
+      "importance": 0.132704
+    },
+    {
+      "feature": "exang",
+      "label": "运动诱发心绞痛",
+      "meaning": "运动诱发性心绞痛。",
+      "importance": 0.087354
+    },
+    {
+      "feature": "oldpeak",
+      "label": "ST压低",
+      "meaning": "运动后 ST 压低程度。",
+      "importance": 0.052189
+    },
+    {
+      "feature": "sex",
+      "label": "性别",
+      "meaning": "性别，1 表示男性，0 表示女性。",
+      "importance": 0.050181
+    },
+    {
+      "feature": "chol",
+      "label": "胆固醇",
+      "meaning": "血清胆固醇，单位为 mg/dl。",
+      "importance": 0.045032
+    },
+    {
+      "feature": "thal",
+      "label": "地中海贫血检查",
+      "meaning": "地中海贫血/灌注检查结果。",
+      "importance": 0.040607
+    },
+    {
+      "feature": "thalach",
+      "label": "最大心率",
+      "meaning": "达到的最大心率。",
+      "importance": 0.038985
+    },
+    {
+      "feature": "age",
+      "label": "年龄",
+      "meaning": "年龄，单位为岁。",
+      "importance": 0.032845
+    },
+    {
+      "feature": "slope",
+      "label": "ST斜率",
+      "meaning": "运动峰值 ST 段斜率。",
+      "importance": 0.023574
+    },
+    {
+      "feature": "fbs",
+      "label": "空腹血糖",
+      "meaning": "空腹血糖是否大于 120 mg/dl。",
+      "importance": 0.019918
+    },
+    {
+      "feature": "ca",
+      "label": "主要血管数目",
+      "meaning": "主要血管数目，来源于荧光透视检查。",
+      "importance": 0.018532
+    },
+    {
+      "feature": "trestbps",
+      "label": "静息血压",
+      "meaning": "静息血压，单位为 mm Hg。",
+      "importance": 0.011731
+    },
+    {
+      "feature": "restecg",
+      "label": "静息心电图",
+      "meaning": "静息心电图结果。",
+      "importance": 0.008908
+    }
+  ],
+  "local_samples": [
+    {
+      "sample_index": 0,
+      "prediction": 0,
+      "prediction_label": "低风险",
+      "prediction_probability": 0.2329,
+      "top_contributions": [
+        {
+          "feature": "cp",
+          "label": "胸痛类型",
+          "raw_value": 1.0,
+          "shap_value": -0.143423,
+          "direction": "降低风险",
+          "meaning": "胸痛类型，1-4 表示不同胸痛模式。"
+        },
+        {
+          "feature": "exang",
+          "label": "运动诱发心绞痛",
+          "raw_value": 0.0,
+          "shap_value": -0.075775,
+          "direction": "降低风险",
+          "meaning": "运动诱发性心绞痛。"
+        },
+        {
+          "feature": "oldpeak",
+          "label": "ST压低",
+          "raw_value": 2.3,
+          "shap_value": 0.051016,
+          "direction": "提高风险",
+          "meaning": "运动后 ST 压低程度。"
+        },
+        {
+          "feature": "ca",
+          "label": "主要血管数目",
+          "raw_value": 0.0,
+          "shap_value": -0.049042,
+          "direction": "降低风险",
+          "meaning": "主要血管数目，来源于荧光透视检查。"
+        },
+        {
+          "feature": "age",
+          "label": "年龄",
+          "raw_value": 63.0,
+          "shap_value": 0.041138,
+          "direction": "提高风险",
+          "meaning": "年龄，单位为岁。"
+        }
+      ],
+      "summary_text": "样本 0 预测为低风险，概率为 0.2329。主要影响因素包括 胸痛类型(1.0)降低风险、运动诱发心绞痛(0.0)降低风险、ST压低(2.3)提高风险、主要血管数目(0.0)降低风险、年龄(63.0)提高风险。"
+    },
+    {
+      "sample_index": 1,
+      "prediction": 1,
+      "prediction_label": "高风险",
+      "prediction_probability": 0.9728,
+      "top_contributions": [
+        {
+          "feature": "cp",
+          "label": "胸痛类型",
+          "raw_value": 4.0,
+          "shap_value": 0.125104,
+          "direction": "提高风险",
+          "meaning": "胸痛类型，1-4 表示不同胸痛模式。"
+        },
+        {
+          "feature": "exang",
+          "label": "运动诱发心绞痛",
+          "raw_value": 1.0,
+          "shap_value": 0.115145,
+          "direction": "提高风险",
+          "meaning": "运动诱发性心绞痛。"
+        },
+        {
+          "feature": "thalach",
+          "label": "最大心率",
+          "raw_value": 108.0,
+          "shap_value": 0.048101,
+          "direction": "提高风险",
+          "meaning": "达到的最大心率。"
+        },
+        {
+          "feature": "oldpeak",
+          "label": "ST压低",
+          "raw_value": 1.5,
+          "shap_value": 0.045562,
+          "direction": "提高风险",
+          "meaning": "运动后 ST 压低程度。"
+        },
+        {
+          "feature": "age",
+          "label": "年龄",
+          "raw_value": 67.0,
+          "shap_value": 0.044807,
+          "direction": "提高风险",
+          "meaning": "年龄，单位为岁。"
+        }
+      ],
+      "summary_text": "样本 1 预测为高风险，概率为 0.9728。主要影响因素包括 胸痛类型(4.0)提高风险、运动诱发心绞痛(1.0)提高风险、最大心率(108.0)提高风险、ST压低(1.5)提高风险、年龄(67.0)提高风险。"
+    },
+    {
+      "sample_index": 2,
+      "prediction": 1,
+      "prediction_label": "高风险",
+      "prediction_probability": 0.9796,
+      "top_contributions": [
+        {
+          "feature": "cp",
+          "label": "胸痛类型",
+          "raw_value": 4.0,
+          "shap_value": 0.109761,
+          "direction": "提高风险",
+          "meaning": "胸痛类型，1-4 表示不同胸痛模式。"
+        },
+        {
+          "feature": "oldpeak",
+          "label": "ST压低",
+          "raw_value": 2.6,
+          "shap_value": 0.087934,
+          "direction": "提高风险",
+          "meaning": "运动后 ST 压低程度。"
+        },
+        {
+          "feature": "exang",
+          "label": "运动诱发心绞痛",
+          "raw_value": 1.0,
+          "shap_value": 0.087101,
+          "direction": "提高风险",
+          "meaning": "运动诱发性心绞痛。"
+        },
+        {
+          "feature": "thal",
+          "label": "地中海贫血检查",
+          "raw_value": 7.0,
+          "shap_value": 0.068768,
+          "direction": "提高风险",
+          "meaning": "地中海贫血/灌注检查结果。"
+        },
+        {
+          "feature": "ca",
+          "label": "主要血管数目",
+          "raw_value": 2.0,
+          "shap_value": 0.032595,
+          "direction": "提高风险",
+          "meaning": "主要血管数目，来源于荧光透视检查。"
+        }
+      ],
+      "summary_text": "样本 2 预测为高风险，概率为 0.9796。主要影响因素包括 胸痛类型(4.0)提高风险、ST压低(2.6)提高风险、运动诱发心绞痛(1.0)提高风险、地中海贫血检查(7.0)提高风险、主要血管数目(2.0)提高风险。"
+    }
+  ],
+  "interaction_pairs": [
+    [
+      "cat__cp_4.0",
+      "num__oldpeak"
+    ],
+    [
+      "cat__cp_4.0",
+      "cat__exang_0.0"
+    ],
+    [
+      "num__chol",
+      "num__oldpeak"
+    ]
+  ],
+  "original_interaction_summary": [
+    {
+      "feature_a": "cp",
+      "feature_a_label": "胸痛类型",
+      "feature_b": "exang",
+      "feature_b_label": "运动诱发心绞痛",
+      "score": 0.011523
+    },
+    {
+      "feature_a": "cp",
+      "feature_a_label": "胸痛类型",
+      "feature_b": "oldpeak",
+      "feature_b_label": "ST压低",
+      "score": 0.006849
+    },
+    {
+      "feature_a": "cp",
+      "feature_a_label": "胸痛类型",
+      "feature_b": "sex",
+      "feature_b_label": "性别",
+      "score": 0.006268
+    }
+  ],
+  "clinical_notes": [
+    "胸痛类型: 胸痛类型能反映症状模式差异，典型胸痛与缺血性心脏病风险密切相关。",
+    "运动诱发心绞痛: 运动诱发性心绞痛常与运动状态下心肌供血不足相关。",
+    "ST压低: 运动后 ST 压低是评估心肌缺血的重要指标，在临床上常被重点关注。",
+    "性别: 性别差异会影响心血管风险分层，是常见的基础人口学特征。",
+    "胆固醇: 胆固醇异常与冠状动脉粥样硬化风险相关，是常见的代谢危险因素。",
+    "模型关注的核心变量主要集中在症状表现、运动相关缺血指标、冠脉受累程度和基础危险因素，整体上与心脏病辅助诊断常识一致。"
+  ],
+  "readable_summary_figure": "summary_original_features.png",
+  "speed_info": {
+    "full_dataset_seconds": 93.7771,
+    "sampled_dataset_seconds": 1.5037,
+    "top_feature_summary_seconds": 0.000481,
+    "sampled_speedup_ratio": 62.3636
+  }
+}
